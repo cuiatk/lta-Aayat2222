@@ -11,11 +11,9 @@ public class Driver {
 	 */
 	public static void main(String[] args) {
 		String input = "The <b>Good</b>, the <i>Bad</i>, and the <strong>Ugly</strong>";
-		String regex = "TODO 1";
+		String regex = "<.*?>";
 		String output = input.replaceAll(regex, "");
 		System.out.println(output);
-		
-		
 		Movie m1 = new Movie("Spancer", 0);
 		Movie m2 = new Movie("Speed", 1);
 		Movie m3 = new Movie("Blood Diamond",2);
